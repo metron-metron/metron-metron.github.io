@@ -1,0 +1,42 @@
+<!DOCTYPE html><html lang="en" data-spec="affliction" class><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow, noarchive"><title>Lead · Black Temple</title><link rel="icon" href="/wow-briefings/favicon.svg" type="image/svg+xml"><script>(function(){const nightId = "2026-10-21-black-temple-hyjal";
+const defaultSpec = "affliction";
+
+      // A manual spec switch only lasts for the current raid night
+      window.__specKey = 'spec:' + nightId;
+      try {
+        const s = localStorage.getItem(window.__specKey);
+        if (s) document.documentElement.dataset.spec = s;
+      } catch {}
+    })();</script><script>
+      const whTooltips = { colorLinks: true, iconizeLinks: true, renameLinks: false };
+    </script><script src="https://wow.zamimg.com/js/tooltips.js" async></script><link rel="stylesheet" href="/wow-briefings/_astro/Base.B908FO88.css"></head><body><header class="site-header"><a class="brand" href="/wow-briefings/">Legaçy Briefings</a><a class="nav-lead" href="/wow-briefings/lead">Raid lead</a><nav class="spec-switch" aria-label="Spec"><button type="button" data-set-spec="affliction" title="Affliction Warlock"><img class="spec-icon" src="/wow-briefings/icons/affliction.jpg" alt="" width="36" height="36">Affli</button><button type="button" data-set-spec="holy" title="Holy Priest"><img class="spec-icon" src="/wow-briefings/icons/holy.jpg" alt="" width="36" height="36">Holy</button><button type="button" data-set-spec="shadow" title="Shadow Priest"><img class="spec-icon" src="/wow-briefings/icons/shadow.jpg" alt="" width="36" height="36">Shadow</button></nav></header><main class="page"><div class="kicker lead-banner">Raid lead view · <a href="/wow-briefings/black-temple">raider view</a></div><h1>Black Temple</h1><section class="panel lead"><h2>Raid Lead</h2><h3>Composition</h3>
+<ul>
+<li>3–4 tanks (Supremus soakers, Council needs 3–4 tanking roles, Bloodboil rotation).</li>
+<li>Illidan: demon phase is skipped by DPS — no warlock tank needed.</li>
+<li>Rogues/warriors/shamans for interrupt rotations (Reliquary Desire, Council&#39;s Malande).</li>
+<li>Shadow resistance gear for Mother Shahraz.</li>
+<li>1–2 Fire Resistance tanks for Illidan&#39;s Flames of Azzinoth.</li>
+</ul>
+<h3>Attunement</h3>
+<ul>
+<li>Original TBC required the <strong>Medallion of Karabor</strong> (Akama questline). Check the anniversary rules before forming a pug-heavy raid.</li>
+</ul>
+<h3>Trash</h3>
+<ul>
+<li>Lots of caster trash: assign interrupts and CC marks (Banish/Fear demons, Shackle Undead where applicable).</li>
+<li>Ashtongue packs: clear before Akama unless the realm&#39;s version makes them neutral already.</li>
+</ul>
+</section><section class="panel"><h2>Bosses</h2><ul><li><a href="/wow-briefings/black-temple/najentus/lead">1. High Warlord Naj&#39;entus</a></li><li><a href="/wow-briefings/black-temple/supremus/lead">2. Supremus</a></li><li><a href="/wow-briefings/black-temple/shade-of-akama/lead">3. Shade of Akama</a></li><li><a href="/wow-briefings/black-temple/teron-gorefiend/lead">4. Teron Gorefiend</a></li><li><a href="/wow-briefings/black-temple/gurtogg-bloodboil/lead">5. Gurtogg Bloodboil</a></li><li><a href="/wow-briefings/black-temple/reliquary-of-souls/lead">6. Reliquary of Souls</a></li><li><a href="/wow-briefings/black-temple/mother-shahraz/lead">7. Mother Shahraz</a></li><li><a href="/wow-briefings/black-temple/illidari-council/lead">8. Illidari Council</a></li><li><a href="/wow-briefings/black-temple/illidan/lead">9. Illidan Stormrage</a></li></ul></section></main><script>
+      function applySpec(spec) {
+        document.documentElement.dataset.spec = spec;
+        document.querySelectorAll('details[data-spec]').forEach((d) => (d.open = d.dataset.spec === spec));
+      }
+      applySpec(document.documentElement.dataset.spec);
+      document.querySelectorAll('[data-set-spec]').forEach((b) =>
+        b.addEventListener('click', () => {
+          const s = b.dataset.setSpec;
+          try { localStorage.setItem(window.__specKey, s); } catch {}
+          applySpec(s);
+        }),
+      );
+    </script></body></html>

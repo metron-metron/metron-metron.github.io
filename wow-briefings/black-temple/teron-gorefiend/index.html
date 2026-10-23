@@ -1,0 +1,58 @@
+<!DOCTYPE html><html lang="en" data-spec="affliction" class><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow, noarchive"><title>Teron Gorefiend · BT</title><link rel="icon" href="/wow-briefings/favicon.svg" type="image/svg+xml"><script>(function(){const nightId = "2026-10-21-black-temple-hyjal";
+const defaultSpec = "affliction";
+
+      // A manual spec switch only lasts for the current raid night
+      window.__specKey = 'spec:' + nightId;
+      try {
+        const s = localStorage.getItem(window.__specKey);
+        if (s) document.documentElement.dataset.spec = s;
+      } catch {}
+    })();</script><script>
+      const whTooltips = { colorLinks: true, iconizeLinks: true, renameLinks: false };
+    </script><script src="https://wow.zamimg.com/js/tooltips.js" async></script><link rel="stylesheet" href="/wow-briefings/_astro/Base.B908FO88.css"></head><body><header class="site-header"><a class="brand" href="/wow-briefings/">Legaçy Briefings</a><a class="nav-lead" href="/wow-briefings/lead">Raid lead</a><nav class="spec-switch" aria-label="Spec"><button type="button" data-set-spec="affliction" title="Affliction Warlock"><img class="spec-icon" src="/wow-briefings/icons/affliction.jpg" alt="" width="36" height="36">Affli</button><button type="button" data-set-spec="holy" title="Holy Priest"><img class="spec-icon" src="/wow-briefings/icons/holy.jpg" alt="" width="36" height="36">Holy</button><button type="button" data-set-spec="shadow" title="Shadow Priest"><img class="spec-icon" src="/wow-briefings/icons/shadow.jpg" alt="" width="36" height="36">Shadow</button></nav></header><main class="page"><div class="boss-head"><div><div class="kicker"><a href="/wow-briefings/black-temple">Black Temple</a> · Boss 4</div><h1>Teron Gorefiend</h1></div><span class="btns"><a class="btn" href="/wow-briefings/black-temple/teron-gorefiend/lead">Raid lead</a><a class="btn" href="/wow-briefings/black-temple/teron-gorefiend/pull">Pull view ⤢</a></span></div><section class="assignment"><div class="label">Tonight · Wednesday, 21 October 2026 · Group 3</div><div class="what">No specific assignment — default role.</div></section><section class="panel tldr"><h2>TL;DR</h2><ul>
+<li>Ranged stack on top of the stairs.</li>
+<li><a class="ability" href="https://www.wowhead.com/tbc/spell=40251" target="_blank" rel="noopener">Shadow of Death</a> on a random player: they die after the timer and become a ghost. Start walking to the far back corner ~10 s before you die; warlocks Soulstone you.</li>
+<li>Each ghost spawns <a class="ability" href="https://www.wowhead.com/tbc/npc=23111" target="_blank" rel="noopener">Shadowy Construct</a>s that must be killed with the ghost abilities before they reach the raid: <strong>Spirit Chains → Spirit Volley</strong>.</li>
+<li><a class="ability" href="https://www.wowhead.com/tbc/spell=40239" target="_blank" rel="noopener">Incinerate</a> on random players — Holy priests dispel it.</li>
+</ul>
+</section><div class="specs"><details class="spec-block" data-spec="affliction" open><summary><img class="spec-icon" src="/wow-briefings/icons/affliction.jpg" alt="" width="36" height="36">Affliction Warlock</summary><ul>
+<li><strong>Soulstone duty:</strong> Soulstone Shadow of Death targets in the order set before the pull — know your slot.</li>
+<li>Full single-target rotation otherwise.</li>
+<li>Shadow of Death on you: walk to the back corner ~10 s before death; use the ghost bar.</li>
+</ul>
+</details><details class="spec-block" data-spec="holy"><summary><img class="spec-icon" src="/wow-briefings/icons/holy.jpg" alt="" width="36" height="36">Holy Priest</summary><ul>
+<li>Assignment is one of:<ul>
+<li><strong>Tank:</strong> together with the shamans and a Holy Paladin.</li>
+<li><strong>Ranged healing:</strong> alongside the ranged group&#39;s shaman.</li>
+<li><strong>DPS:</strong> SW:P, Holy Fire, Mind Blast, then Smite — no respec needed.</li>
+</ul>
+</li>
+<li>You are the <strong>Incinerate dispeller</strong>, DPS assignment included — Dispel Magic within 1–2 s; it ticks hard.</li>
+<li>A Shadow of Death target will die regardless — don&#39;t waste big heals.</li>
+</ul>
+</details><details class="spec-block" data-spec="shadow"><summary><img class="spec-icon" src="/wow-briefings/icons/shadow.jpg" alt="" width="36" height="36">Shadow Priest</summary><ul>
+<li>Full single target, VT for raid mana.</li>
+<li>Ghost duty is the same for everyone.</li>
+</ul>
+</details></div><section class="panel"><h2>Strategy</h2><p>Ranged stack on top of the stairs. Shadow of Death targets head to the far back corner about 10 s before they die and get a Soulstone from the warlocks. As a ghost, root the Constructs with Spirit Chains and kill them with Spirit Volley in the corner.</p>
+</section><section class="panel"><h2>Abilities</h2><ul>
+<li><a class="ability" href="https://www.wowhead.com/tbc/spell=40251" target="_blank" rel="noopener">Shadow of Death</a> — kills you after ~55 s; then you&#39;re a ghost.</li>
+<li>Ghost bar: <strong>Spirit Lance</strong> (slow), <strong>Spirit Chains</strong> (root), <strong>Spirit Volley</strong> (AoE), <strong>Spirit Strike</strong>, <strong>Spirit Shield</strong>.</li>
+<li><a class="ability" href="https://www.wowhead.com/tbc/spell=40239" target="_blank" rel="noopener">Incinerate</a> — fire DoT, magic, dispellable.</li>
+<li><a class="ability" href="https://www.wowhead.com/tbc/spell=40243" target="_blank" rel="noopener">Crushing Shadows</a> — shadow damage on several players.</li>
+<li>Doom Blossoms — shoot shadow bolts at players.</li>
+</ul>
+</section><nav class="prevnext"><span><a href="/wow-briefings/black-temple/shade-of-akama">← Shade of Akama</a></span><span><a href="/wow-briefings/black-temple/gurtogg-bloodboil">Gurtogg Bloodboil →</a></span></nav></main><script>
+      function applySpec(spec) {
+        document.documentElement.dataset.spec = spec;
+        document.querySelectorAll('details[data-spec]').forEach((d) => (d.open = d.dataset.spec === spec));
+      }
+      applySpec(document.documentElement.dataset.spec);
+      document.querySelectorAll('[data-set-spec]').forEach((b) =>
+        b.addEventListener('click', () => {
+          const s = b.dataset.setSpec;
+          try { localStorage.setItem(window.__specKey, s); } catch {}
+          applySpec(s);
+        }),
+      );
+    </script></body></html>

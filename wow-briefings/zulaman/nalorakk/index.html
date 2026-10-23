@@ -1,0 +1,44 @@
+<!DOCTYPE html><html lang="en" data-spec="affliction" class><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow, noarchive"><title>Nalorakk · ZA</title><link rel="icon" href="/wow-briefings/favicon.svg" type="image/svg+xml"><script>(function(){const nightId = "2026-10-21-black-temple-hyjal";
+const defaultSpec = "affliction";
+
+      // A manual spec switch only lasts for the current raid night
+      window.__specKey = 'spec:' + nightId;
+      try {
+        const s = localStorage.getItem(window.__specKey);
+        if (s) document.documentElement.dataset.spec = s;
+      } catch {}
+    })();</script><script>
+      const whTooltips = { colorLinks: true, iconizeLinks: true, renameLinks: false };
+    </script><script src="https://wow.zamimg.com/js/tooltips.js" async></script><link rel="stylesheet" href="/wow-briefings/_astro/Base.B908FO88.css"></head><body><header class="site-header"><a class="brand" href="/wow-briefings/">Legaçy Briefings</a><a class="nav-lead" href="/wow-briefings/lead">Raid lead</a><nav class="spec-switch" aria-label="Spec"><button type="button" data-set-spec="affliction" title="Affliction Warlock"><img class="spec-icon" src="/wow-briefings/icons/affliction.jpg" alt="" width="36" height="36">Affli</button><button type="button" data-set-spec="holy" title="Holy Priest"><img class="spec-icon" src="/wow-briefings/icons/holy.jpg" alt="" width="36" height="36">Holy</button><button type="button" data-set-spec="shadow" title="Shadow Priest"><img class="spec-icon" src="/wow-briefings/icons/shadow.jpg" alt="" width="36" height="36">Shadow</button></nav></header><main class="page"><div class="boss-head"><div><div class="kicker"><a href="/wow-briefings/zulaman">Zul&#39;Aman</a> · Boss 2</div><h1>Nalorakk</h1></div><span class="btns"><a class="btn" href="/wow-briefings/zulaman/nalorakk/lead">Raid lead</a><a class="btn" href="/wow-briefings/zulaman/nalorakk/pull">Pull view ⤢</a></span></div><section class="panel tldr"><h2>TL;DR</h2><ul>
+<li>Swaps between troll and bear form.</li>
+<li>Troll form: <a class="ability" href="https://www.wowhead.com/tbc/spell=42402" target="_blank" rel="noopener">Surge</a> charges the furthest player — one soaker stands far away; don&#39;t be further than them.</li>
+<li>Bear form: <a class="ability" href="https://www.wowhead.com/tbc/spell=42398" target="_blank" rel="noopener">Deafening Roar</a> silences — no long casts right before; tank takes heavy bleeds.</li>
+</ul>
+</section><div class="specs"><details class="spec-block" data-spec="affliction" open><summary><img class="spec-icon" src="/wow-briefings/icons/affliction.jpg" alt="" width="36" height="36">Affliction Warlock</summary><ul>
+<li>Full DoT rotation.</li>
+</ul>
+</details><details class="spec-block" data-spec="holy"><summary><img class="spec-icon" src="/wow-briefings/icons/holy.jpg" alt="" width="36" height="36">Holy Priest</summary><ul>
+<li>Bear form tank: <a class="ability" href="https://www.wowhead.com/tbc/spell=42395" target="_blank" rel="noopener">Lacerating Slash</a> / <a class="ability" href="https://www.wowhead.com/tbc/spell=42397" target="_blank" rel="noopener">Rend Flesh</a> bleeds — big heals ready.</li>
+<li>Deafening Roar: have HoTs and shields rolling before it.</li>
+</ul>
+</details><details class="spec-block" data-spec="shadow"><summary><img class="spec-icon" src="/wow-briefings/icons/shadow.jpg" alt="" width="36" height="36">Shadow Priest</summary><ul>
+<li>Single target; Shadowfiend when silence isn&#39;t up.</li>
+</ul>
+</details></div><section class="panel"><h2>Strategy</h2><p>Stand at range but closer than the Surge soaker. Pre-heal before silences.</p>
+</section><section class="panel"><h2>Abilities</h2><ul>
+<li>Surge (furthest player), Deafening Roar (silence), bleeds on the tank in bear form.</li>
+</ul>
+</section><nav class="prevnext"><span><a href="/wow-briefings/zulaman/akilzon">← Akil&#39;zon</a></span><span><a href="/wow-briefings/zulaman/janalai">Jan&#39;alai →</a></span></nav></main><script>
+      function applySpec(spec) {
+        document.documentElement.dataset.spec = spec;
+        document.querySelectorAll('details[data-spec]').forEach((d) => (d.open = d.dataset.spec === spec));
+      }
+      applySpec(document.documentElement.dataset.spec);
+      document.querySelectorAll('[data-set-spec]').forEach((b) =>
+        b.addEventListener('click', () => {
+          const s = b.dataset.setSpec;
+          try { localStorage.setItem(window.__specKey, s); } catch {}
+          applySpec(s);
+        }),
+      );
+    </script></body></html>

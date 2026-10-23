@@ -1,0 +1,55 @@
+<!DOCTYPE html><html lang="en" data-spec="affliction" class><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow, noarchive"><title>Lead · Teron Gorefiend</title><link rel="icon" href="/wow-briefings/favicon.svg" type="image/svg+xml"><script>(function(){const nightId = "2026-10-21-black-temple-hyjal";
+const defaultSpec = "affliction";
+
+      // A manual spec switch only lasts for the current raid night
+      window.__specKey = 'spec:' + nightId;
+      try {
+        const s = localStorage.getItem(window.__specKey);
+        if (s) document.documentElement.dataset.spec = s;
+      } catch {}
+    })();</script><script>
+      const whTooltips = { colorLinks: true, iconizeLinks: true, renameLinks: false };
+    </script><script src="https://wow.zamimg.com/js/tooltips.js" async></script><link rel="stylesheet" href="/wow-briefings/_astro/Base.B908FO88.css"></head><body><header class="site-header"><a class="brand" href="/wow-briefings/">Legaçy Briefings</a><a class="nav-lead" href="/wow-briefings/lead">Raid lead</a><nav class="spec-switch" aria-label="Spec"><button type="button" data-set-spec="affliction" title="Affliction Warlock"><img class="spec-icon" src="/wow-briefings/icons/affliction.jpg" alt="" width="36" height="36">Affli</button><button type="button" data-set-spec="holy" title="Holy Priest"><img class="spec-icon" src="/wow-briefings/icons/holy.jpg" alt="" width="36" height="36">Holy</button><button type="button" data-set-spec="shadow" title="Shadow Priest"><img class="spec-icon" src="/wow-briefings/icons/shadow.jpg" alt="" width="36" height="36">Shadow</button></nav></header><main class="page"><div class="boss-head"><div><div class="kicker lead-banner"><a href="/wow-briefings/black-temple/lead">Black Temple</a> · Raid lead view</div><h1>Teron Gorefiend</h1></div><a class="btn" href="/wow-briefings/black-temple/teron-gorefiend">Raider view</a></div><section class="panel lead"><h2>Raid Lead</h2><h3>Setup</h3>
+<ul>
+<li>1 tank. Tank healing: shamans + a Holy Paladin; Chain Heals cover the raid; one shaman on the ranged.</li>
+<li>Holy priests: tank, ranged healing or Smite DPS as needed.</li>
+<li><strong>Soulstone order</strong> for Shadow of Death targets — set it before the pull.</li>
+<li>Make sure everyone knows the ghost bar. Paladins/mages can avoid Shadow of Death with Divine Shield / Ice Block.</li>
+</ul>
+<h3>Positioning</h3>
+<ul>
+<li>Ranged stacked on top of the stairs.</li>
+<li>Shadow of Death targets: far back corner, where ghosts kill the Constructs.</li>
+</ul>
+<h3>Calls</h3>
+<ul>
+<li>Name each Shadow of Death target → &quot;move to the corner&quot; ~10 s before death, next warlock Soulstones.</li>
+<li>&quot;Constructs loose&quot; if a ghost fails.</li>
+</ul>
+<h3>Wipe causes</h3>
+<ul>
+<li>Constructs reaching the raid (they fear/kill).</li>
+<li>Incinerate not dispelled.</li>
+<li>Missed Soulstone → one fewer player after each ghost.</li>
+</ul>
+</section><nav class="prevnext"><span><a href="/wow-briefings/black-temple/shade-of-akama/lead">← Shade of Akama</a></span><span><a href="/wow-briefings/black-temple/gurtogg-bloodboil/lead">Gurtogg Bloodboil →</a></span></nav><script>(function(){const prevUrl = "/wow-briefings/black-temple/shade-of-akama/lead";
+const nextUrl = "/wow-briefings/black-temple/gurtogg-bloodboil/lead";
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft' && prevUrl) location.href = prevUrl;
+      if (e.key === 'ArrowRight' && nextUrl) location.href = nextUrl;
+    });
+  })();</script></main><script>
+      function applySpec(spec) {
+        document.documentElement.dataset.spec = spec;
+        document.querySelectorAll('details[data-spec]').forEach((d) => (d.open = d.dataset.spec === spec));
+      }
+      applySpec(document.documentElement.dataset.spec);
+      document.querySelectorAll('[data-set-spec]').forEach((b) =>
+        b.addEventListener('click', () => {
+          const s = b.dataset.setSpec;
+          try { localStorage.setItem(window.__specKey, s); } catch {}
+          applySpec(s);
+        }),
+      );
+    </script></body></html>

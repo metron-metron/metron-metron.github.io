@@ -1,0 +1,39 @@
+<!DOCTYPE html><html lang="en" data-spec="affliction" class="pull-mode"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow, noarchive"><title>PULL · Shade of Akama</title><link rel="icon" href="/wow-briefings/favicon.svg" type="image/svg+xml"><script>(function(){const nightId = "2026-10-21-black-temple-hyjal";
+const defaultSpec = "affliction";
+
+      // A manual spec switch only lasts for the current raid night
+      window.__specKey = 'spec:' + nightId;
+      try {
+        const s = localStorage.getItem(window.__specKey);
+        if (s) document.documentElement.dataset.spec = s;
+      } catch {}
+    })();</script><script>
+      const whTooltips = { colorLinks: true, iconizeLinks: true, renameLinks: false };
+    </script><script src="https://wow.zamimg.com/js/tooltips.js" async></script><link rel="stylesheet" href="/wow-briefings/_astro/Base.B908FO88.css"></head><body><main class="pull"><div class="pull-top"><h1>Shade of Akama</h1><nav class="spec-switch" aria-label="Spec"><button type="button" data-set-spec="affliction" title="Affliction Warlock"><img class="spec-icon" src="/wow-briefings/icons/affliction.jpg" alt="" width="36" height="36">Affli</button><button type="button" data-set-spec="holy" title="Holy Priest"><img class="spec-icon" src="/wow-briefings/icons/holy.jpg" alt="" width="36" height="36">Holy</button><button type="button" data-set-spec="shadow" title="Shadow Priest"><img class="spec-icon" src="/wow-briefings/icons/shadow.jpg" alt="" width="36" height="36">Shadow</button></nav></div><div class="pull-col"><section class="assignment"><div class="label">Tonight · Wednesday, 21 October 2026 · Group 3</div><div class="what">No specific assignment — default role.</div></section><section class="panel tldr"><h2>TL;DR</h2><ul>
+<li>Akama keeps the Shade inactive while six <a class="ability" href="https://www.wowhead.com/tbc/npc=23421" target="_blank" rel="noopener">Ashtongue Channeler</a>s channel on it. Adds stream in from the side doors until the Shade dies; the tanks pick them up.</li>
+<li>A trash mob is kept alive and placed in the middle of the Channelers, under the Shade. Warlocks Seed it so the explosions hit all Channelers; mages Arcane Explosion them.</li>
+<li>Channelers dead → the raid moves to Akama and AoEs the adds. Then a fast burn on the Shade; adds are ignored. <strong>Akama must survive.</strong></li>
+</ul>
+</section><section class="panel pull-spec" data-spec="affliction"><h2><img class="spec-icon" src="/wow-briefings/icons/affliction.jpg" alt="" width="36" height="36">Affliction Warlock</h2><ul><li>Phase 1: spam Seed on the parked trash mob</li><li>At Akama: Seed the adds; then full single target on the Shade</li></ul></section><section class="panel pull-spec" data-spec="holy"><h2><img class="spec-icon" src="/wow-briefings/icons/holy.jpg" alt="" width="36" height="36">Holy Priest</h2><ul><li>Tanks take the door adds — keep them up</li><li>Low raid damage — Smite / SW:P when the tanks are topped</li></ul></section><section class="panel pull-spec" data-spec="shadow"><h2><img class="spec-icon" src="/wow-briefings/icons/shadow.jpg" alt="" width="36" height="36">Shadow Priest</h2><ul><li>DoTs on all Channelers, then DPS the one melee is on</li></ul></section><section class="panel pull-spec pull-loot" data-spec="holy"><h2>Loot</h2><div class="loot-group "><ul><li><a class="item q4" href="https://www.wowhead.com/tbc/item=32513" target="_blank" rel="noopener">Wristbands of Divine Influence</a><span class="chip loot-chip ">Alt</span><span class="muted"> · wrist · <span class="gain">+8.3 score</span> · over Swiftheal Wraps</span></li></ul></div></section><section class="panel pull-spec pull-loot" data-spec="shadow"><h2>Loot</h2><div class="loot-group offspec"><h3 class="loot-spec-holy">Holy · offspec</h3><ul><li><a class="item q4" href="https://www.wowhead.com/tbc/item=32513" target="_blank" rel="noopener">Wristbands of Divine Influence</a><span class="chip loot-chip ">Alt</span><span class="muted"> · wrist · <span class="gain">+8.3 score</span> · over Swiftheal Wraps</span></li></ul></div></section></div><div class="pull-foot"><span><a href="/wow-briefings/black-temple/supremus/pull">← Supremus</a></span><span><a href="/wow-briefings/black-temple/shade-of-akama">Full briefing (Esc)</a> · <a href="/wow-briefings/">Tonight</a></span><span><a href="/wow-briefings/black-temple/teron-gorefiend/pull">Teron Gorefiend →</a></span></div><script>(function(){const prevUrl = "/wow-briefings/black-temple/supremus/pull";
+const nextUrl = "/wow-briefings/black-temple/teron-gorefiend/pull";
+const fullUrl = "/wow-briefings/black-temple/shade-of-akama";
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft' && prevUrl) location.href = prevUrl;
+      if (e.key === 'ArrowRight' && nextUrl) location.href = nextUrl;
+      if (e.key === 'Escape') location.href = fullUrl;
+    });
+  })();</script></main><script>
+      function applySpec(spec) {
+        document.documentElement.dataset.spec = spec;
+        document.querySelectorAll('details[data-spec]').forEach((d) => (d.open = d.dataset.spec === spec));
+      }
+      applySpec(document.documentElement.dataset.spec);
+      document.querySelectorAll('[data-set-spec]').forEach((b) =>
+        b.addEventListener('click', () => {
+          const s = b.dataset.setSpec;
+          try { localStorage.setItem(window.__specKey, s); } catch {}
+          applySpec(s);
+        }),
+      );
+    </script></body></html>

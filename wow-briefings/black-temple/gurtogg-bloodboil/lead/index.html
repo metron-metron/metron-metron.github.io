@@ -1,0 +1,54 @@
+<!DOCTYPE html><html lang="en" data-spec="affliction" class><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow, noarchive"><title>Lead · Gurtogg Bloodboil</title><link rel="icon" href="/wow-briefings/favicon.svg" type="image/svg+xml"><script>(function(){const nightId = "2026-10-21-black-temple-hyjal";
+const defaultSpec = "affliction";
+
+      // A manual spec switch only lasts for the current raid night
+      window.__specKey = 'spec:' + nightId;
+      try {
+        const s = localStorage.getItem(window.__specKey);
+        if (s) document.documentElement.dataset.spec = s;
+      } catch {}
+    })();</script><script>
+      const whTooltips = { colorLinks: true, iconizeLinks: true, renameLinks: false };
+    </script><script src="https://wow.zamimg.com/js/tooltips.js" async></script><link rel="stylesheet" href="/wow-briefings/_astro/Base.B908FO88.css"></head><body><header class="site-header"><a class="brand" href="/wow-briefings/">Legaçy Briefings</a><a class="nav-lead" href="/wow-briefings/lead">Raid lead</a><nav class="spec-switch" aria-label="Spec"><button type="button" data-set-spec="affliction" title="Affliction Warlock"><img class="spec-icon" src="/wow-briefings/icons/affliction.jpg" alt="" width="36" height="36">Affli</button><button type="button" data-set-spec="holy" title="Holy Priest"><img class="spec-icon" src="/wow-briefings/icons/holy.jpg" alt="" width="36" height="36">Holy</button><button type="button" data-set-spec="shadow" title="Shadow Priest"><img class="spec-icon" src="/wow-briefings/icons/shadow.jpg" alt="" width="36" height="36">Shadow</button></nav></header><main class="page"><div class="boss-head"><div><div class="kicker lead-banner"><a href="/wow-briefings/black-temple/lead">Black Temple</a> · Raid lead view</div><h1>Gurtogg Bloodboil</h1></div><a class="btn" href="/wow-briefings/black-temple/gurtogg-bloodboil">Raider view</a></div><section class="panel lead"><h2>Raid Lead</h2><h3>Setup</h3>
+<ul>
+<li>3 tanks for the threat game: <a class="ability" href="https://www.wowhead.com/tbc/spell=40597" target="_blank" rel="noopener">Eject</a> knocks back and drops threat; <a class="ability" href="https://www.wowhead.com/tbc/spell=40484" target="_blank" rel="noopener">Acidic Wound</a> stacks armor reduction → tanks rotate.</li>
+<li>Soak rotation: G3 ×2, G4 ×2, G5 ×1 (covers one Bloodboil phase).</li>
+<li>Holy priests on the soakers (CoH on the stacked group) + tank healers + Fel Rage healers.</li>
+</ul>
+<h3>Positioning</h3>
+<ul>
+<li>Tank in a fixed spot, melee behind/side (<a class="ability" href="https://www.wowhead.com/tbc/spell=40599" target="_blank" rel="noopener">Arcing Smash</a> cleave in front).</li>
+<li>Ranged in one line next to the water; the soaking group one step back.</li>
+</ul>
+<h3>Calls</h3>
+<ul>
+<li>&quot;G3 back&quot; → &quot;G4 back&quot; → &quot;G5 back&quot; on the rotation.</li>
+<li>&quot;Fel Rage on [name]&quot; → healers on them.</li>
+</ul>
+<h3>Wipe causes</h3>
+<ul>
+<li>Bloodboil rotation breaking (one group stacks too many DoTs).</li>
+<li>Losing aggro after Eject without enough threat on the next tank.</li>
+<li>Fel Rage target dying.</li>
+</ul>
+</section><nav class="prevnext"><span><a href="/wow-briefings/black-temple/teron-gorefiend/lead">← Teron Gorefiend</a></span><span><a href="/wow-briefings/black-temple/reliquary-of-souls/lead">Reliquary of Souls →</a></span></nav><script>(function(){const prevUrl = "/wow-briefings/black-temple/teron-gorefiend/lead";
+const nextUrl = "/wow-briefings/black-temple/reliquary-of-souls/lead";
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft' && prevUrl) location.href = prevUrl;
+      if (e.key === 'ArrowRight' && nextUrl) location.href = nextUrl;
+    });
+  })();</script></main><script>
+      function applySpec(spec) {
+        document.documentElement.dataset.spec = spec;
+        document.querySelectorAll('details[data-spec]').forEach((d) => (d.open = d.dataset.spec === spec));
+      }
+      applySpec(document.documentElement.dataset.spec);
+      document.querySelectorAll('[data-set-spec]').forEach((b) =>
+        b.addEventListener('click', () => {
+          const s = b.dataset.setSpec;
+          try { localStorage.setItem(window.__specKey, s); } catch {}
+          applySpec(s);
+        }),
+      );
+    </script></body></html>

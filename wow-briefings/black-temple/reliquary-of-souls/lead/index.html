@@ -1,0 +1,55 @@
+<!DOCTYPE html><html lang="en" data-spec="affliction" class><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow, noarchive"><title>Lead · Reliquary of Souls</title><link rel="icon" href="/wow-briefings/favicon.svg" type="image/svg+xml"><script>(function(){const nightId = "2026-10-21-black-temple-hyjal";
+const defaultSpec = "affliction";
+
+      // A manual spec switch only lasts for the current raid night
+      window.__specKey = 'spec:' + nightId;
+      try {
+        const s = localStorage.getItem(window.__specKey);
+        if (s) document.documentElement.dataset.spec = s;
+      } catch {}
+    })();</script><script>
+      const whTooltips = { colorLinks: true, iconizeLinks: true, renameLinks: false };
+    </script><script src="https://wow.zamimg.com/js/tooltips.js" async></script><link rel="stylesheet" href="/wow-briefings/_astro/Base.B908FO88.css"></head><body><header class="site-header"><a class="brand" href="/wow-briefings/">Legaçy Briefings</a><a class="nav-lead" href="/wow-briefings/lead">Raid lead</a><nav class="spec-switch" aria-label="Spec"><button type="button" data-set-spec="affliction" title="Affliction Warlock"><img class="spec-icon" src="/wow-briefings/icons/affliction.jpg" alt="" width="36" height="36">Affli</button><button type="button" data-set-spec="holy" title="Holy Priest"><img class="spec-icon" src="/wow-briefings/icons/holy.jpg" alt="" width="36" height="36">Holy</button><button type="button" data-set-spec="shadow" title="Shadow Priest"><img class="spec-icon" src="/wow-briefings/icons/shadow.jpg" alt="" width="36" height="36">Shadow</button></nav></header><main class="page"><div class="boss-head"><div><div class="kicker lead-banner"><a href="/wow-briefings/black-temple/lead">Black Temple</a> · Raid lead view</div><h1>Reliquary of Souls</h1></div><a class="btn" href="/wow-briefings/black-temple/reliquary-of-souls">Raider view</a></div><section class="panel lead"><h2>Raid Lead</h2><h3>Setup</h3>
+<ul>
+<li><strong>P1:</strong> soakers (warriors with Shield Wall etc.) stand closest — the boss fixates the nearest player.</li>
+<li><strong>P2:</strong> interrupt rotation on <strong>Spirit Shock</strong> (must interrupt); Spell Reflect/Grounding for <strong>Deaden</strong>; mages/shamans purge/steal <strong>Rune Shield</strong>.</li>
+<li>Shadow resistance (or potions) for P3.</li>
+<li>Priests: P1 DPS + PW:S + dispel Soul Drain; P2/P3 raid healing.</li>
+</ul>
+<h3>Positioning</h3>
+<ul>
+<li>Raid stacks loosely at range all fight; P1 soakers in melee.</li>
+</ul>
+<h3>Calls</h3>
+<ul>
+<li>&quot;Souls incoming&quot; between phases — AoE/DPS on them.</li>
+<li>&quot;Interrupt&quot; rotation on Spirit Shock.</li>
+<li>P3: Bloodlust/Heroism here.</li>
+</ul>
+<h3>Wipe causes</h3>
+<ul>
+<li>P1 soakers dying (no healing possible).</li>
+<li>Missed Spirit Shock interrupts.</li>
+<li>P3 too slow — Aura of Anger stacks out-heal the raid.</li>
+</ul>
+</section><nav class="prevnext"><span><a href="/wow-briefings/black-temple/gurtogg-bloodboil/lead">← Gurtogg Bloodboil</a></span><span><a href="/wow-briefings/black-temple/mother-shahraz/lead">Mother Shahraz →</a></span></nav><script>(function(){const prevUrl = "/wow-briefings/black-temple/gurtogg-bloodboil/lead";
+const nextUrl = "/wow-briefings/black-temple/mother-shahraz/lead";
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft' && prevUrl) location.href = prevUrl;
+      if (e.key === 'ArrowRight' && nextUrl) location.href = nextUrl;
+    });
+  })();</script></main><script>
+      function applySpec(spec) {
+        document.documentElement.dataset.spec = spec;
+        document.querySelectorAll('details[data-spec]').forEach((d) => (d.open = d.dataset.spec === spec));
+      }
+      applySpec(document.documentElement.dataset.spec);
+      document.querySelectorAll('[data-set-spec]').forEach((b) =>
+        b.addEventListener('click', () => {
+          const s = b.dataset.setSpec;
+          try { localStorage.setItem(window.__specKey, s); } catch {}
+          applySpec(s);
+        }),
+      );
+    </script></body></html>

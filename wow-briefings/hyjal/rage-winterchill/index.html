@@ -1,0 +1,51 @@
+<!DOCTYPE html><html lang="en" data-spec="affliction" class><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow, noarchive"><title>Rage Winterchill · Hyjal</title><link rel="icon" href="/wow-briefings/favicon.svg" type="image/svg+xml"><script>(function(){const nightId = "2026-10-21-black-temple-hyjal";
+const defaultSpec = "affliction";
+
+      // A manual spec switch only lasts for the current raid night
+      window.__specKey = 'spec:' + nightId;
+      try {
+        const s = localStorage.getItem(window.__specKey);
+        if (s) document.documentElement.dataset.spec = s;
+      } catch {}
+    })();</script><script>
+      const whTooltips = { colorLinks: true, iconizeLinks: true, renameLinks: false };
+    </script><script src="https://wow.zamimg.com/js/tooltips.js" async></script><link rel="stylesheet" href="/wow-briefings/_astro/Base.B908FO88.css"></head><body><header class="site-header"><a class="brand" href="/wow-briefings/">Legaçy Briefings</a><a class="nav-lead" href="/wow-briefings/lead">Raid lead</a><nav class="spec-switch" aria-label="Spec"><button type="button" data-set-spec="affliction" title="Affliction Warlock"><img class="spec-icon" src="/wow-briefings/icons/affliction.jpg" alt="" width="36" height="36">Affli</button><button type="button" data-set-spec="holy" title="Holy Priest"><img class="spec-icon" src="/wow-briefings/icons/holy.jpg" alt="" width="36" height="36">Holy</button><button type="button" data-set-spec="shadow" title="Shadow Priest"><img class="spec-icon" src="/wow-briefings/icons/shadow.jpg" alt="" width="36" height="36">Shadow</button></nav></header><main class="page"><div class="boss-head"><div><div class="kicker"><a href="/wow-briefings/hyjal">Hyjal Summit</a> · Boss 1</div><h1>Rage Winterchill</h1></div><span class="btns"><a class="btn" href="/wow-briefings/hyjal/rage-winterchill/lead">Raid lead</a><a class="btn" href="/wow-briefings/hyjal/rage-winterchill/pull">Pull view ⤢</a></span></div><section class="assignment"><div class="label">Tonight · Wednesday, 21 October 2026 · Group 3</div><div class="what">No specific assignment — default role.</div></section><section class="panel tldr"><h2>TL;DR</h2><ul>
+<li>First Hyjal boss, after 8 trash waves at Jaina&#39;s base — drink up before he lands.</li>
+<li>Groups: <strong>G3 at the tree · G4 at the smithy · G5 at the ballista</strong>.</li>
+<li><strong>Death and Decay</strong> — big ground AoE; ranged get out. Melee stay in it and are healed through.</li>
+<li><a class="ability" href="https://www.wowhead.com/tbc/spell=31249" target="_blank" rel="noopener">Icebolt</a> stuns a random player; <a class="ability" href="https://www.wowhead.com/tbc/spell=29849" target="_blank" rel="noopener">Frost Nova</a> roots nearby players — priests dispel both.</li>
+</ul>
+</section><div class="specs"><details class="spec-block" data-spec="affliction" open><summary><img class="spec-icon" src="/wow-briefings/icons/affliction.jpg" alt="" width="36" height="36">Affliction Warlock</summary><ul>
+<li>Waves: Seed of Corruption on grouped ghouls/fiends once tanked; Curse of Agony on big targets.</li>
+<li>Cast <strong>Inferno</strong> (Summon Infernal) shortly before the pull for extra DPS.</li>
+<li>Boss: full DoT rotation + Shadow Bolt.</li>
+</ul>
+</details><details class="spec-block" data-spec="holy"><summary><img class="spec-icon" src="/wow-briefings/icons/holy.jpg" alt="" width="36" height="36">Holy Priest</summary><ul>
+<li><strong>Raid healing</strong>, usually assigned to G3 or G4.</li>
+<li>Melee stay in D&amp;D — heal them through it.</li>
+<li>Dispel Icebolt/Frost Nova.</li>
+<li>Waves: raid healing; pace your mana for 8 waves + boss.</li>
+</ul>
+</details><details class="spec-block" data-spec="shadow"><summary><img class="spec-icon" src="/wow-briefings/icons/shadow.jpg" alt="" width="36" height="36">Shadow Priest</summary><ul>
+<li>VT on the boss; Mind Flay filler.</li>
+</ul>
+</details></div><section class="panel"><h2>Strategy</h2><p>Groups stand at their spots: G3 tree, G4 smithy, G5 ballista. Ranged move out of D&D; melee stay and get healed through it. Dispel stuns/roots, burn him down. Easiest Hyjal boss.</p>
+</section><section class="panel"><h2>Abilities</h2><ul>
+<li>Death and Decay — ground AoE, deadly if you stay.</li>
+<li>Icebolt — stun + frost damage, magic.</li>
+<li>Frost Nova — root, magic.</li>
+</ul>
+</section><section class="panel pull-spec pull-loot" data-spec="holy"><h2>Loot</h2><div class="loot-group "><ul><li><a class="item q4" href="https://www.wowhead.com/tbc/item=30871" target="_blank" rel="noopener">Bracers of Martyrdom</a><span class="chip loot-chip ">Alt</span><span class="muted"> · wrist · <span class="gain">+27.6 score</span> · over Swiftheal Wraps</span></li></ul></div></section><section class="panel pull-spec pull-loot" data-spec="shadow"><h2>Loot</h2><div class="loot-group offspec"><h3 class="loot-spec-holy">Holy · offspec</h3><ul><li><a class="item q4" href="https://www.wowhead.com/tbc/item=30871" target="_blank" rel="noopener">Bracers of Martyrdom</a><span class="chip loot-chip ">Alt</span><span class="muted"> · wrist · <span class="gain">+27.6 score</span> · over Swiftheal Wraps</span></li></ul></div></section><nav class="prevnext"><span></span><span><a href="/wow-briefings/hyjal/anetheron">Anetheron →</a></span></nav></main><script>
+      function applySpec(spec) {
+        document.documentElement.dataset.spec = spec;
+        document.querySelectorAll('details[data-spec]').forEach((d) => (d.open = d.dataset.spec === spec));
+      }
+      applySpec(document.documentElement.dataset.spec);
+      document.querySelectorAll('[data-set-spec]').forEach((b) =>
+        b.addEventListener('click', () => {
+          const s = b.dataset.setSpec;
+          try { localStorage.setItem(window.__specKey, s); } catch {}
+          applySpec(s);
+        }),
+      );
+    </script></body></html>
